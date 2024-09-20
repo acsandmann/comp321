@@ -1,4 +1,4 @@
-Answer for question 2 - Atticus Sandmann
+Answer for question 2
 (a) - The assignment operator = behaves differently in different scopes (global, inside functions, and inside nested functions). Multiple assignments within the same scope update the variable, while scopes can be modified using global and nonlocal.
 
 (b) - The 'global' keyword allows a function to modify a global variable instead of creating a local one. Without 'global', the function would create a local variable, leaving the global variable unchanged. The scope of 'global' is within the function, and it permits direct mutation of global objects.
