@@ -29,4 +29,6 @@
 
 (composed-fn 10)
 
+(= (pred x) #t)
+
   
