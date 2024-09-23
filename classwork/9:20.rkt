@@ -12,3 +12,7 @@
 (define lst '(1 2 3))
 
 (((curry list) 1 2))
+
+((((curry foldl) +) 0) '(1 2 3))
+
+(define keep-odds ((curry filter) odd?))
