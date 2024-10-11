@@ -1,0 +1,17 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Atticus Sandmann\
+\
+1. a) make-point, point-x, point-y, and point?\
+\
+2. a) The param. X has the type of `string | number` meaning it is a union between the string and number type. The if construct checks if x and y are the same, allowing TS to infer that x is a string when x=y. So calling toUpperCase and toLowerCase is safe without a type error. \
+    b) function idenMap<T>(array: T[]): T[] \{ return array.map(item => item); \}; The generic type T makes sure that the input and output array have elements of the same type \
+    c) Using ? Means the property can be undefined, whereas declaring a union with null allows the property to be null. This is a distinct difference because in typescript undefined and null are different things, so declaring a property as ? Allows it to be either defined or undefined, while a union with null allows it to be null but still requires it to be explicitly declared. \
+\
+5. Some languages, like Racket, support heterogenous lists for more flexibility by allowing different data types in one list. This is convenient in some respects for scripting and rapid prototyping but it makes type checking and debugging more difficult later one. Other languages, like Java, require homogenous lists for type safety; this makes code more maintainable and prevents runtime errors. \
+}
